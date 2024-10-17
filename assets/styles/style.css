@@ -20,7 +20,7 @@ body {
     height: 100vh;
     background-image: url(../images/severnoe.jpg);
     background-size: cover;
-    /* backdrop-filter: blur(5px); */
+    /* background-position: center; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -288,16 +288,96 @@ a {
     transform: translateX(-300%);
 }
 
-@media (max-width: 699px) {
-    .slider__controls-and-text {
-        flex-direction: column-reverse;
+@media (max-width: 1000px) {
+    * {
+        font-size: 3vw;
     }
-    .slider__labels {
-        justify-self: center;
-        align-self: center;
+}
+
+@media (max-width: 800px) {
+    * {
+        font-size: 4vw;
     }
-    .slider__memes,
-    .slider__controls-and-text {
-        max-width: 80vw;
+    .start-me {
+        flex-direction: column;
+        gap: 3vw;
+    }
+    .my-photo {
+        width: 400px;
+        height: auto;
+    }
+    .start {
+        text-align: center;
+    }
+    .logo_footer {
+        width: 14vw;
+        max-width: 60px;
+    }
+    .inactive-mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    * {
+        font-size: 4vw;
+    }
+    .start-me {
+        flex-direction: column;
+        gap: 3vw;
+    }
+    .start-me-name {
+        font-size: 6vw;
+    }
+    .my-photo {
+        width: 400px;
+        height: auto;
+    }
+    .start {
+        text-align: center;
+    }
+    .logo_footer {
+        width: 14vw;
+        max-width: 60px;
+    }
+    .inactive-mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 450px) {
+    * {
+        font-size: 5vw;
+    }
+    main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    header,
+    footer {
+        padding: 4vw 1vw;
+        justify-content: space-between
+    }
+    .start-me {
+        flex-direction: column;
+        gap: 3vw;
+    }
+    .start-me-name {
+        font-size: 7vw;
+    }
+    .my-photo {
+        width: 114%;
+        height: auto;
+    }
+    .start {
+        text-align: center;
+    }
+    .logo_footer {
+        width: 12vw;
+        max-width: 40px;
+    }
+    .inactive-mobile {
+        display: none;
     }
 }
